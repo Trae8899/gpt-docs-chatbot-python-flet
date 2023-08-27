@@ -147,8 +147,8 @@ class VectorQAAI(ft.UserControl):
             self.new_message_row.visible=False
             self.new_message.value = ""
             self.new_message_row.update()
-            self.gptcount=0
-            e.page.show_snack_bar(ft.SnackBar(ft.Text(f"Remain : {self.gptcount} query"), open=True))
+            # self.gptcount=0
+            # e.page.show_snack_bar(ft.SnackBar(ft.Text(f"Remain : {self.gptcount} query"), open=True))
             try:
             # aichat1=Message(self.engineertype.value, self.promptmessage.value,subcontents=["""text1""","""text2"""])
             # self.page.pubsub.send_all(aichat1)
