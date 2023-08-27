@@ -3,7 +3,10 @@ gpt-docs-chatbot-python by using pinecone/openai on flet
 
 This guide is about the implementation of 'gpt-docs-chatbot-python' using Pinecone and Flet.
 
-![Alt text](image.png)
+Result and source is shown as per map reduce method
+![Alt text](pngs/Result.png)
+
+![Alt text](Concept.png)
 
 1. Setting up the API Key
 Begin by configuring your Pinecone API Key to enable API access.

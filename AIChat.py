@@ -138,7 +138,7 @@ class VectorQAAI(ft.UserControl):
         self.chat.update()
 
     def send_message_click(self,e):
-        self.user_name=self.page.session.get("user_name")
+        self.user_name=self.page.session.get("user_id")
         query=self.new_message.value
         
         if query !="":
@@ -192,6 +192,7 @@ class VectorQAAI(ft.UserControl):
         self.pnindex=self.page.session.get("PINECONE_INDEX_NAME")
         self.pnenv=self.page.session.get("PINECONE_ENVIRONMENT")
         self.pnapi=self.page.session.get("PINECONE_API_KEY")
+        self.user_name=self.page.session.get("user_id")
         
         return ft.Column([ft.Container(content=ft.Column(
             [ft.Container(content=ft.Column([
@@ -209,7 +210,6 @@ class VectorQAAI(ft.UserControl):
 if __name__ == "__main__":
     def main(page: ft.Page):
         AIchat=VectorQAAI(page)
-        page.session.set("user_name","JH")
         page.add(AIchat.build_page())
         page.scroll="AUTO"
         page.on_resize=page.update()
