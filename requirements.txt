@@ -1,0 +1,8 @@
+flet
+langchain
+openai
+pandas
+python-dotenv
+pinecone-client
+tiktoken
+pypdf
