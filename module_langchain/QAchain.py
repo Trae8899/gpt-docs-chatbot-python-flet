@@ -40,7 +40,7 @@ def ask_asme(query:str,chat_history=None,prompt_concept=None,openai_api=OPENAI_A
     embeddings = OpenAIEmbeddings(openai_api_key=openai_api)
     vectorstore = Pinecone(index, embeddings, "text")
     memory = ConversationBufferMemory(memory_key="chat_history", output_key='answer', return_messages=True)
-    llm = OpenAI(temperature=0.3,openai_api_key=openai_api,model="gpt-3.5-turbo")
+    llm = OpenAI(temperature=0.3,openai_api_key=openai_api)
 
     prompt_template=""
     if prompt_concept:
